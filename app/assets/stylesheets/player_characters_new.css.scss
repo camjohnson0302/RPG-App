@@ -1,0 +1,185 @@
+.new-character-switch-container {
+  width:100%;
+  height:100%;
+  // background-color: $paper-alt-1;
+}
+
+.new-character-container {
+  width:100%;
+  height:100%;
+}
+
+.no-overflow {
+	overflow:hidden;
+}
+
+.new-character-intro {
+	padding:20px;
+  background-color: $paper-alt-1;
+  height:100%;
+  // background: asset-url('aquila2background.jpg', image);
+}
+
+.new-character-options {
+	padding:20px;
+	padding-top:62px;
+	text-align: center;
+	ul {
+		list-style-type:none;
+	}
+}
+
+.option-button {
+	width: 200px;
+}
+
+.homeworld-img {
+  background: asset-url('aquila2.jpg', image);
+	float:left;
+	// display: inline-block;
+  height:175px;
+  width:175px;
+  margin-right:15px;
+}
+
+// .new-character-select {
+//   display:block;
+//   list-style-type: none;
+//   margin-top: 0px;
+//   padding: 0px;
+
+//   li {
+//     display: inline-block;
+//     text-align:center;
+//     border-right: 2px solid black;
+//     border-bottom: 2px solid black;
+//     padding:10px 10px;
+  
+//     .active {
+//       border-bottom: none;
+//     }
+//   }
+// }
+
+
+ul.nav.nav-tabs {
+	background-color:$grey-2;
+	
+	a { 
+		color:black;
+	}
+	
+	.active a{
+		background-color:$paper-alt-1;
+		box-shadow: 2px -1px 5px -2px black;
+		margin:0;
+		color:black;
+	}
+}
+
+.new-character-list-homeworld {
+  height:100%;
+  text-align:center; 
+  vertical-align:top;
+  background-color:$paper-alt-1;
+
+  ul {
+    list-style-type:none;
+    border:2px solid black;
+    height:260px;
+    padding-left:0px; 
+    overflow:scroll;
+
+    li {
+    	text-align:left;
+    	font-size:16px;
+    	padding:5px; 
+    }
+  }
+}
+
+.new-character-list-career {
+  height:100%;
+  text-align:center;
+  vertical-align:top;
+
+  ul {
+    list-style-type:none;
+    border:2px solid black;
+    height:260px;
+    padding-left:0px;
+  }
+}
+
+.clear-left {
+	clear:left;
+}
+
+.no-wrap {
+	white-space: nowrap;
+}
+
+.new-character-description {
+  width:100%;
+
+	p {
+		display:inline;
+  	padding-left:15px;
+  	vertical-align: top;
+	}
+}
+
+.new-character-nav {
+	padding:10px;
+	padding-top:0px;
+	text-align:right;
+	clear:left;
+	// background-color: $paper-alt-1;
+	width:100%;
+}
+
+button {
+  width:72px;
+}
+
+
+.new-character-list-stats {
+
+  height:100%;
+  padding:20px;
+  padding-top:62px;
+	
+	ul {
+		list-style-type:none;
+  	text-align:center;
+  	padding:0px;
+
+	  div {
+	    display:inline-block;
+	    width:45px;
+
+	    input {
+	      width:20px;
+	      text-align: center;
+	    }
+	  }
+	}
+}
+
+.move-values {
+  li {
+    display:inline-block;
+    width:40px;
+  }
+
+  li.block {
+    display:block;
+    width:100%;
+    text-align:center;
+  }
+}
+
+
+
+
+

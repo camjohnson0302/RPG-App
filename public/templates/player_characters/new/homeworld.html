@@ -1,0 +1,92 @@
+<!-- <div>
+	<ul class="new-character-select">
+		<li>Choose your Homeworld</li>
+		<li data-ng-click="selectPlanet(world)" data-ng-repeat="world in homeworlds" >
+			{{world.planet_type}}
+		</li>
+	</ul>
+</div>
+
+<div>
+	<div class="new-character-description">
+		<img src="#"/>
+		<p data-ng-model="selectedPlanet">
+			{{selectedPlanet.description}}
+		</p>
+	</div>
+
+	<div>
+		<div class="new-character-list-homeworld">
+			<h3><u>Available Careers</u></h3>
+			<ul data-ng-model="selectedPlanet">
+				<li data-ng-repeat="career in selectedPlanet.careers">
+					{{career.name}}
+				</li>
+			</ul>
+		</div>
+
+		<div class="new-character-list-homeworld">
+			<h3><u>Traits</u></h3>
+			<ul data-ng-model="selectedPlanet">
+				<li>planet traits</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="new-character-nav">
+	<button ng-click="back()">back</button>
+	<button ng-click="continue()">continue</button>
+</div> -->
+<div class="new-character-homeworld">
+	<tabset class="tabset">
+	  <tab ng-repeat="world in homeworlds" heading="{{world.planet_type}}" active="world.active" disabled="world.disabled">
+			<div>
+				<div data-ng-model="world" class="new-character-description">
+					<div class="homeworld-img"></div>
+					<h2><u>{{world.planet_type}} Born</u></h2>
+					<p data-ng-model="world">
+						{{world.description}}
+					</p>
+	<!-- 				<br><br>
+					<p data-ng-model="world">
+						{{world.summary}}
+					</p> -->
+				</div>
+			
+				<div class="row clear-left">
+					<div class="new-character-list-homeworld col-md-6">
+						<h3><u>Available Careers</u></h3>
+						<ul data-ng-model="world">
+							<li data-ng-repeat="career in world.careers">
+								<b>{{career.name}}</b>
+							</li>
+						</ul>
+					</div>
+
+					<div class="new-character-list-homeworld col-md-6">
+						<h3><u>Starting Traits</u></h3>
+						<ul data-ng-model="world">
+							<li data-ng-repeat="trait in world.traits">
+								<b>{{trait.name}}:</b>{{trait.description}}
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="new-character-nav">
+					<button ng-click="back()">back</button>
+					<button ng-click="continue()">continue</button>
+				</div>
+			</div>
+	  </tab>
+	</tabset>
+</div>
+
+<!-- <div class="new-character-nav">
+	<button ng-click="back()">back</button>
+	<button ng-click="continue()">continue</button>
+</div>
+
+ -->
+

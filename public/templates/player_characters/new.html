@@ -1,0 +1,17 @@
+<div class="new-character-switch-container" ng-switch="currentPage">
+  <div class="new-character-container" ng-switch-when="0" >
+    <ng-include src="'templates/player_characters/new/intro.html'"></ng-include>
+  </div>
+  <div class="new-character-container" ng-switch-when="1">
+    <ng-include src="'templates/player_characters/new/homeworld.html'"></ng-include>
+  </div>
+  <div ng-switch-when="2">
+    <ng-include src="'templates/player_characters/new/stats.html'"></ng-include>
+  </div>
+  <div ng-switch-when="3">
+    <ng-include src="'templates/player_characters/new/career.html'"></ng-include>
+  </div>
+  <div ng-switch-when="4">
+    <ng-include src="'templates/player_characters/new/options.html'"></ng-include>
+  </div>
+</div>

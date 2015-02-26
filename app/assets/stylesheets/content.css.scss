@@ -1,0 +1,54 @@
+@import 'colors';
+
+
+
+.content-container {
+  font-family: sans-serif;
+  padding-top: 0px;
+  margin-top: 0px;
+  height:100%;
+}
+
+.container-fluid {
+  height:100%;
+  background-color: $grey-2;
+}
+
+.full-height {
+  height:100%;
+}
+
+.sidebar {
+  margin-bottom: 0px;
+  height:100%;
+  background-color: $red-cover-3;
+  box-shadow: -2px 0px 8px black inset;
+}
+
+.row {
+  height:100%;
+}
+
+
+.tab-content {
+  padding: 20px;
+  box-shadow: 2px 0px 8px black;
+  background-color: $paper-alt-1;
+  height:100%;
+}
+
+.tab-pane {
+  height:100%;
+}
+
+.tabset {
+  height:100%;
+}
+
+.content {
+  padding-left:0px; 
+  margin:0px;
+  height:100%;
+  text-align: left;
+  vertical-align: top;
+}

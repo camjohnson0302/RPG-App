@@ -1,0 +1,21 @@
+<div class="new-character-options">
+	<ul>
+		<li>Options</li>
+
+		<li ng-click="expand()" ng-repeat="option in options">
+			<button class="option-button" data-ng-click="choose()">
+				{{option.choice1}}
+			</button>
+			or
+			<button class="option-button" data-ng-click="choose()">
+				{{option.choice2}}
+			</button>
+		</li>
+	</ul>
+</div>
+
+
+<div class="new-character-nav">
+	<button ng-click="back()">back</button>
+	<button ng-click="continue()">continue</button>
+</div>

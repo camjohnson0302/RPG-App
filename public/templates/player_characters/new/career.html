@@ -1,0 +1,91 @@
+<!-- <ul class="new-character-select">
+	<li>Choose your Career Path</li>
+	<li data-ng-click="selectCareer(career)" data-ng-repeat="career in careers" >
+		{{career.name}}
+	</li>
+</ul>
+
+
+<div class="new-character-description">
+	<img src="#">
+	<p data-ng-model="selectedCareer">
+		{{selectedCareer.description}}
+	</p>
+</div>
+
+<div>
+	<div class="new-character-list-career">
+		<h3><u>Skills</u></h3>
+		<ul data-ng-model="selectedCareer">
+			<li>Starting Skills</li>
+		</ul>
+	</div>
+
+	<div class="new-character-list-career">
+		<h3><u>Traits</u></h3>
+		<ul data-ng-model="selectedCareer">
+			<li>Starting Traits</li>
+		</ul>
+	</div>
+
+	<div class="new-character-list-career">
+		<h3><u>Gear</u></h3>
+		<ul data-ng-model="selectedCareer">
+			<li>Starting Gear</li>
+		</ul>
+	</div>
+</div>
+
+<div class="new-character-nav">
+	<button ng-click="back()">back</button>
+	<button ng-click="continue()">continue</button>
+</div>
+ -->
+<tabset>
+  <tab ng-repeat="career in careers" heading="{{career.name}}" active="career.active" disabled="career.disabled">
+		<div>
+			<div class="new-character-description">
+				<div class="homeworld-img"></div>
+				<p data-ng-model="career">
+					{{career.description}}
+				</p>
+			</div>
+		
+			<div class="row">
+
+				<div class="new-character-list-career clear-left col-md-4">
+					<h3><u>Skills</u></h3>
+					<ul data-ng-model="career">
+<!-- 						<li data-ng-repeat="career in career.skills">
+							{{career.name}}
+						</li> -->
+						<li>starting skill</li>
+					</ul>
+				</div>
+
+				<div class="new-character-list-career col-md-4">
+					<h3><u>Traits</u></h3>
+					<ul data-ng-model="career">
+						<li>starting traits</li>
+					</ul>
+				</div>
+
+				<div class="new-character-list-career col-md-4">
+					<h3><u>Gear</u></h3>
+					<ul data-ng-model="career">
+						<li>starting gear</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="new-character-nav">
+			<button ng-click="back()">back</button>
+			<button ng-click="continue()">continue</button>
+		</div>
+  </tab>
+</tabset>
+
+
+
+

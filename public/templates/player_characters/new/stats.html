@@ -1,0 +1,48 @@
+<div class="new-character-intro">
+	<div class="new-character-list-stats col-md-6">
+			<ul>
+				<li><h4><u>Primary Stats</u></h4></li>
+				<li class="row" ng-click="expand()" ng-repeat="stat in baseStats" >
+					<div><p>{{stat}}</p></div>
+					<div><input type="text" value="?"/></div>
+					<div><button data-ng-click="roll()">Roll</button></div>
+				</li>
+			</ul>
+	</div>
+
+
+	<div class="new-character-list-stats col-md-6">
+		<div class="secondary-stats">
+			<ul>
+				<li><h4><u>Secondary Stats</u></h4></li>
+				<li class="row" ng-click="expand()" ng-repeat="stat in secondaryStats">
+					<div><p>{{stat}}</p></div>
+					<div><input type="text" value="?"/></div>
+					<div><button data-ng-click="roll()">Roll</button></div>
+				</li>
+			</ul>
+		</div>
+
+		<div class="move-values">
+			<ul>
+				<li class="block"><h4><u>Move Speeds</u></h4></li>
+				<li ng-repeat="value in move">
+					<div>
+						<p>{{value}}</p>
+						<input type="text" value="?"/>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="new-character-nav">
+		<button ng-click="back()">back</button>
+		<button ng-click="continue()">continue</button>
+	</div>
+
+	<button data-ng-click = 'create()'>create</button>
+
+
+
+</div>
